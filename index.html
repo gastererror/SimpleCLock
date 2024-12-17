@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Clock</title>
+</head>
+<body>
+    <button class="setting-btn" onclick="extend()">
+        <span class="bar bar1"></span>
+        <span class="bar bar2"></span>
+        <span class="bar bar1"></span>
+      </button>
+      
+    <div id="dropcard">
+        <div id="hour" class="main-card">
+            <div id="font-card" class="sub-card">
+                <h1>00</h1>
+            </div>
+        </div>
+        <div id="minute" class="main-card">
+            <div id="font-card1" class="sub-card">
+                <h1>00</h1>
+            </div>
+        </div>
+        <div id="second" class="main-card">
+            <div id="font-card2" class="sub-card">
+                <h1>00</h1>
+            </div>
+        </div>
+    </div>
+    <p id="credit">Code by <a href="https://github.com/gastererror" target="_blanks">@ErrMC_404</a></p>
+    <div id="settings-card">
+        <div id="dropcard-setting" class="setting-chs">
+            <p onclick="extend1()">Drop Card Effect</p>
+            <select class="option1">
+                <option value="1">Dropcard</option>
+                <option value="0">None</option>
+            </select>
+        </div>
+        <!-- <div id="color-settings" class="setting-chs">
+            <p>Color</p>
+        </div> -->
+        <div id="bg-setting" class="setting-chs">
+            <p onclick="extend3()">Background</p>
+            <div id="bgset">
+                <input type="radio" name="option" value="1" id="option1-bg">
+                <input type="file" id="fileInput" accept="image/*">
+            </div>
+            <div id="colorset">
+                <input type="radio" name="option" value="2" id="option2-bg" checked>
+                <input type="color" id="colorInput" value="#313131">
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <!-- credit by errmc404-->
+</body>
+</html>
